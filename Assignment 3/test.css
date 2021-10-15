@@ -1,49 +1,42 @@
-:root{
-    --primary-color: rgba(102, 102, 102, 0.75);
-    --overlay-color:rgba(127, 129, 131, 0.85);
-    --menu-speed:0.75s;
-}
-*{
-    box-sizing: border-box;
-   
-}
-body{
-    font-family: 'Comic Neue', cursive;
-    font-weight: bold;
-    background-color: ghostwhite;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-
-.navbar-header{
-    position: fixed;
-    top: 21px;
-    left: 50px;
-}
-.navbar-brand{
-    color:black;
-}
-h1{
-    font-size: 175%;
-    margin-bottom: 15px;
+body {
     text-align: center;
-    font-weight: bolder;
 }
-.row{
 
-    width: 100%;
-    padding-left:20px;
+h1 {
+    font-weight: 800;
 }
-.container{
-    font-size: 45px;
-    color: black;
-    text-align: left;
-}
-#header-nav{
+
+.navbar-header {
     background-color: grey;
-    border-radius: 0;
-    border: 0;
-    height: 100px;
 }
+
+.navbar-brand a {
+    color: #000;
+    font-size: xx-large;
+    font-weight: 800;
+}
+
+.box {
+    background-color: grey;
+}
+
+.row {
+    display: inline-block;
+}
+
+.nav{
+    text-align: center;
+    background-color: #fff;
+}
+.navbar{
+    background-color: grey;
+}
+
 .cont{
     justify-content: space-evenly;
     border: 1px solid black;
@@ -70,7 +63,7 @@ h1{
 }
 p{
     width: 100%;
-    height: 300px;
+    height: 200px;
     margin-right: auto;
     margin-left: auto;
     padding: 20px;
@@ -80,6 +73,8 @@ p{
 }
 /* .cont1{
 margin-right: 10px;} */ 
+
+
 @media (min-width: 992px){
 .col-lg-4{
     width: 30%;
@@ -87,14 +82,6 @@ margin-right: 10px;} */
    left:27px;
    margin-left: 30px;
 }
-.menu{
-    visibility: hidden;
-}
-
-.toggler{
-    visibility: hidden;
-}
-
 }
 @media (min-width: 768px) and (max-width: 991px){
 .cont{
@@ -113,14 +100,6 @@ margin-right: 10px;} */
      position: 0;
 
 }
-.menu{
-    visibility: hidden;
-}
-
-.toggler{
-    visibility: hidden;
-}
-
 }
 
 #myNavbar ul li a {
@@ -145,9 +124,5 @@ margin-right: 10px;} */
 clear: left;
 width: 82%;
 margin-bottom: 20px;
-}
-
-.navbar-brand{
-    color: black;
 }
 }
