@@ -1,3 +1,8 @@
+:root{
+    --primary-color: rgba(102, 102, 102, 0.75);
+    --overlay-color:rgba(127, 129, 131, 0.85);
+    --menu-speed:0.75s;
+}
 *{
     box-sizing: border-box;
    
@@ -6,6 +11,16 @@ body{
     font-family: 'Comic Neue', cursive;
     font-weight: bold;
     background-color: ghostwhite;
+}
+
+
+.navbar-header{
+    position: fixed;
+    top: 21px;
+    left: 50px;
+}
+.navbar-brand{
+    color:black;
 }
 h1{
     font-size: 175%;
@@ -55,7 +70,7 @@ h1{
 }
 p{
     width: 100%;
-    height: 200px;
+    height: 300px;
     margin-right: auto;
     margin-left: auto;
     padding: 20px;
@@ -65,8 +80,6 @@ p{
 }
 /* .cont1{
 margin-right: 10px;} */ 
-
-
 @media (min-width: 992px){
 .col-lg-4{
     width: 30%;
@@ -74,6 +87,14 @@ margin-right: 10px;} */
    left:27px;
    margin-left: 30px;
 }
+.menu{
+    visibility: hidden;
+}
+
+.toggler{
+    visibility: hidden;
+}
+
 }
 @media (min-width: 768px) and (max-width: 991px){
 .cont{
@@ -92,14 +113,41 @@ margin-right: 10px;} */
      position: 0;
 
 }
+.menu{
+    visibility: hidden;
 }
 
+.toggler{
+    visibility: hidden;
+}
 
+}
+
+#myNavbar ul li a {
+	color: #61122F;
+}
+.navbar-brand{
+    font-size: 30px;	
+    }
+    .glyphicon{
+        font-size: 30px;
+        color:#61122F; 
+    }
+    .navbar{
+
+        border: none;
+        background-color: black;
+        color: #61122F;
+        } 
 
 @media (max-width: 767px){
 .col-sm-12{
 clear: left;
 width: 82%;
 margin-bottom: 20px;
+}
+
+.navbar-brand{
+    color: black;
 }
 }
